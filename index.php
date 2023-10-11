@@ -6,8 +6,6 @@
     <title>Inicio</title>
   </head>
   <body>
-    <main>
-      <a href="https:www.google.com.br">Link do Google</a>
-    </main>
+    
   </body>
 </html>
