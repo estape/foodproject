@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <button id="connectButton">Conectar ao Banco de Dados</button>
+
+    <script>
+        // Quando o botão for clicado
+        $("#connectButton").click(function() {
+            $.ajax({
+                url: "nome_do_seu_arquivo_php.php", // Substitua "nome_do_seu_arquivo_php.php" pelo nome do seu arquivo PHP
+                method: "POST",
+                success: function(response) {
+                    alert(response); // Exibe a resposta do servidor em um alert
+                }
+            });
+        });
+    </script>
+</body>
+</html>
