@@ -1,0 +1,32 @@
+{
+    "1": {
+        "fullname": "Alice Johnson",
+        "cpf": "12345678901",
+        "dataBirth": "01/01/1990",
+        "card": "1234-5678-9012-3456"
+    },
+    "2": {
+        "fullname": "Bob Smith",
+        "cpf": "98765432109",
+        "dataBirth": "02/02/1995",
+        "card": "9876-5432-1098-7654"
+    },
+    "3": {
+        "fullname": "Charlie Davis",
+        "cpf": "55555555555",
+        "dataBirth": "03/03/1985",
+        "card": "5555-5555-5555-5555"
+    },
+    "4": {
+        "fullname": "David White",
+        "cpf": "22222222222",
+        "dataBirth": "04/04/2000",
+        "card": "2222-2222-2222-2222"
+    },
+    "5": {
+        "fullname": "Eva Martinez",
+        "cpf": "99999999999",
+        "dataBirth": "05/05/1995",
+        "card": "9999-9999-9999-9999"
+    }
+}

@@ -1,20 +1,27 @@
 <?php
-$fullName;
-$cpf;
-$dataBirth;
-$card;
-
 class NewUserData
 {
-    // Adicione um construtor para a classe
-    public function __construct($fullName, $cpf, $dataBirth, $card)
+    public function NewUserData($fullname, $cpf, $dataBirth, $card)
     {
-        $filename = $cpf . ".txt";  // Use o valor de CPF para nomear o arquivo
-        $myfile = fopen($filename, "w") or die("Unable to open file!");
+        $AllData = "fullname = $fullname\ncpf = $cpf\ndataBirth = $dataBirth\ncard = $card";
+        
+        $Path = "core/php/db/Users";
+        
+        // Escrever a string em um novo arquivo com o nome "WriteLines.txt".
+        file_put_contents("$Path/$cpf.txt", $AllData);
+    }
 
-        $txt = "fullname=" . $fullName . "\n" . "cpf=" . $cpf . "\n" . "databirth=" . $dataBirth . "\n" . "card=" . $card;
-        fwrite($myfile, $txt);
-        fclose($myfile);
+    public function LoadRestaurant($id)
+    {
+        $file = fopen("$id.txt", "r");
+
+        //Output lines until EOF is reached
+        while(! feof($file)) {
+          $line = fgets($file);
+          echo $line. "<br>";
+        }
+
+        fclose($file);
     }
 }
 ?>
