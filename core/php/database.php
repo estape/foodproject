@@ -10,7 +10,7 @@ class database
         // // Escrever a string em um novo arquivo com o nome "WriteLines.txt".
         // file_put_contents("$Path/$cpf.txt", $AllData);
         $Path = "core/php/db/Users";
-        
+
         $DataToJson = new stdClass();
         $DataToJson-> name = $fullname;
         $DataToJson-> databirth = $dataBirth;
@@ -23,7 +23,7 @@ class database
 
     public function LoadRestaurant($id)
     {
-        // $file = fopen("$id.txt", "r");
+        $file = fopen("$id.txt", "r");
 
         // //Output lines until EOF is reached
         // while(! feof($file)) {
