@@ -44,14 +44,14 @@
   
   
     button{
-      border: 1px  ;
+      border: 1px ;
       width: 80px;
-  height:40px    ;
-  border-radius: 30px;
-  color: #DAA06D;
-  font-family: inherit;
-  cursor: pointer;
-  background-color: white;
+      height:40px;
+      border-radius: 30px;
+      color: #DAA06D;
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+      background-color: white;
   
   }
   
