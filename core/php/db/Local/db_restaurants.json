@@ -1,37 +1,37 @@
-{
-    "1": {
+[
+    {
         "name": "Restaurante do João",
         "type": "Brasileiro",
         "address": "Rua Principal, 123",
         "tel": "(11) 4456-7890",
         "class": 4
     },
-    "2": {
+    {
         "name": "Pizzaria Bella Napoli",
         "type": "Italiano",
         "address": "Avenida Secundária, 456",
         "tel": "(12) 5654-3210",
         "class": 3
     },
-    "3": {
+    {
         "name": "Sushi Palace",
         "type": "Japonês",
         "address": "Praça Central, 789",
         "tel": "(19) 98123-4567",
         "class": 5
     },
-    "4": {
+    {
         "name": "Cantina da Nonna",
         "type": "Italiano",
         "address": "Rua da Amizade, 567",
         "tel": "(11) 4533-4444",
         "class": 4
     },
-    "5": {
+    {
         "name": "BBQ Shack",
         "type": "Churrascaria",
         "address": "Avenida da Carne, 890",
         "tel": "(11) 2888-7777",
         "class": 2
     }
-}
+]
