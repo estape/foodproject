@@ -1,78 +1,82 @@
-*{margin: 0;
-  padding: 0;}
+*{
+    margin: 0;
+    padding: 0;
+}
   
   
-  a{color: #FFDC2E;
-  text-decoration: none;
-  transition: 0.3s;
+  a{
+    color: #FFDC2E;
+    text-decoration: none;
+    transition: 0.3s;
   }
   
   a:hover{
-      opacity: 0.7;
+    opacity: 0.7;
   }
   
   .logo{
-      font-size: 24px;
-      text-transform: uppercase;
-      letter-spacing: 4px;}
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;}
   
-      .nav-bar {display: flex;
-      justify-content: space-around;
-  align-items: center;
-  background-color:#D80C05
-  ;
-  height: 8vh;  list-style: none;
-  display: flex;
-  
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#D80C05;
+    height: 8vh;  list-style: none;
+    display: flex;
   }
   
  
   .nav-list {
     list-style: none;
     display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
   }
   
   
    
   
   
-  .nav-bar li {
-      letter-spacing: 3px;
-      margin-left: 32px;
+.nav-bar li {
+   letter-spacing: 3px;
+   margin-left: 32px;
   }
   
   
   
-    button{
-      border: 1px ;
-      width: 80px;
-      height:40px;
-      border-radius: 30px;
-      color: #DAA06D;
-      font-family: 'Poppins', sans-serif;
-      cursor: pointer;
-      background-color: white;
+  button{
+    border: 1px ;
+    width: 80px;
+    height:40px;
+    border-radius: 30px;
+    color: #DAA06D;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background-color: white;
   
   }
   
   body{
-  background-image: url(/frontend/html/principal/img/sugestão-kah.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(/frontend/html/principal/img/sugestão-kah.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   
   }
   .conteudo-principal {
       
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      margin-top: 300px;
-      height: 100vh;
-      width: 100vh;
-      margin-left: 30%;
-      border-radius: 40px;
-      background-color: #FFA726;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    height: 100vh;
+    width: 100vh;
+    margin-left: 30%;
+    border-radius: 40px;
+    background-color: #FFA726;
   
   }
   
@@ -80,7 +84,7 @@
     height: 1px;
   }
   .box{
-      border: 4px #DAA06D solid ;
+    border: 4px #DAA06D solid ;
   } 
   
   /*footer*/
