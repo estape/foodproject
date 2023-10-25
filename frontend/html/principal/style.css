@@ -34,15 +34,54 @@
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
   }
-  
-  
-   
-  
-  
+    
 .nav-bar li {
    letter-spacing: 3px;
    margin-left: 32px;
   }
+
+  /*Responsividade*/
+
+  .mobile-menu{
+    display: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+  }
+
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #D80C05;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  /*Fim Responsividade*/
   
   
   
