@@ -35,24 +35,23 @@
         </nav>
     </header>
 
-    <nav><img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <input id="search" placeholder="Escolha o Estado" list="cidades" name="cidades">
+    <nav class="pesquisa">
+        <div class="search-container">
+            <input id="search" placeholder="Escolha o restaurante" color="withe" list="cidades" name="cidades">
+            <img  src="/frontend/html/principal/img/procura.png" alt="procura"  width="40px">
+        </div>
         <datalist id="cidades">
             <option value="Restaurante do João"></option>
             <option value="Pizzaria Bella Napoli"></option>
             <option value="Sushi Palace"></option>
             <option value="Cantina da Nonna"></option>
             <option value="BBQ Shack"></option>
+        </datalist>
     </nav>
+    
     
 <main class="conteudo-principal">
      
-
-            
-    </main>
-    <script src="mobile-navbar.js"></script>
     <article>
         <section>
             <h2>Faça uma Reserva</h2>
@@ -69,10 +68,12 @@
                 <button type="submit">Reservar</button>
             </form>
         </section>
-        </section>
-        <section></section>
-        <section></section>
-        <section></section>
+        </article>
+            
+    </main>
+    <script src="mobile-navbar.js"></script>
+    
+        
               <footer> 
             <br>
             <div>SOBRE NÓS</div>
