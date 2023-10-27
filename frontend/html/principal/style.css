@@ -66,7 +66,7 @@
     top: 8vh;
     right: 0;
     width: 35vw;
-    height: 92vh;
+    height: 93vh;
     background: #D80C05;
     flex-direction: column;
     align-items: center;
@@ -136,9 +136,9 @@
     display: flex;
     justify-content: center;
     margin-top: 300px;
-    height: 100vh;
-    width: 100vh;
-    margin-left: 30%;
+    height: 120vh;
+    width: 120vh;
+    margin-left: 20%;
     border-radius: 40px;
     background-color: #FFA726;
     display: flex;
@@ -146,6 +146,17 @@
     align-items: center;
     margin-bottom: 100px ;
   
+  }
+
+  h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 32px;
+    position: absolute;
+    top: 100vh;
+    align-items: center;
+    font-style: italic;
+    margin-left: 1%;
+
   }
   
   .search-container {
@@ -339,7 +350,7 @@ footer p{
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
-/* for all social containers*/
+/* Para todas redes sociais*/
 .socialContainer {
   width: 52px;
   height: 52px;
@@ -399,4 +410,6 @@ footer p{
     opacity: 1;
   }
 }
+/*Fim redes sociais*/
+
 
