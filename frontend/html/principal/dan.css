@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer; /* Adicionado */
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Restante do seu CSS aqui... */
+
+/* Responsividade */
+@media (max-width: 999px) {
+    /* Outros estilos... */
+
+    .nav-list.active {
+        transform: translateX(0);
+        transition: transform 0.5s; /* Adicionado para uma transição suave */
+    }
+}
+
+/* Estilização do ícone de pesquisa */
+.pesquisa img {
+    display: flex;
+    background-color: blue;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px; /* Adicionado para espaçamento interno */
+}
+
+/* Estilização do rodapé (Footer) */
+footer {
+    background-image: linear-gradient(to bottom, #FFB442, #FFA726, #E6953C);
+    padding-left: 3%;
+    padding-right: 3%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055); /* Adicionado sombra */
+}
+
+/* Estilização das redes sociais */
+.card {
+    /* Outros estilos... */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055); /* Adicionado sombra */
+}
+
+.socialContainer:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Efeito de escurecimento */
+    transition-duration: 0.3s;}
