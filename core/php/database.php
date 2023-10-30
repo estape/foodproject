@@ -15,7 +15,7 @@ class database
         
     }
 
-    public function LoadRestaurant($id)
+    public function LoadRestaurant($name, $type, $address, $tel, $class)
     {
         file_get_contents("/core/db/Local/db_restaurants.json", $jsonRT);
         $jsonRT = json_decode($DataRT, true);
@@ -24,7 +24,7 @@ class database
         {
             foreach($DataRT as $item)
             {
-                echo 'name'
+                
             }
         }
     }
