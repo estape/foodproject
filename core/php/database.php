@@ -1,32 +1,80 @@
 <?php
 class database
 {
-    public function NewUserData($fullname, $cpf, $dataBirth, $card)
+    public function SetUserData($fullname, $cpf, $dataBirth, $card, $email, $password)
     {
-        $Path = "core/php/db/Users";
-
+        $userFilePath = "core/db/Users/"; // Substitua pelo caminho correto
+    
         $DataToJson = new stdClass();
-        $DataToJson-> name = $fullname;
-        $DataToJson-> databirth = $dataBirth;
-        $DataToJson-> card = $card;
+        $DataToJson->name = $fullname;
+        $DataToJson->databirth = $dataBirth;
+        $DataToJson->card = $card;
+        $DataToJson->email = $email;
+        $DataToJson->password = $password;
+    
+        // Verifica se o diretório para os arquivos dos usuários existe, se não cria
+        if (!file_exists($userFilePath)) {
+            mkdir($userFilePath, 0755, true);
+        }
+    
+        $userFile = "$userFilePath/$cpf.json";
+    
+        // Tenta gravar os dados do usuário no arquivo
+        if (file_put_contents($userFile, json_encode($DataToJson)) !== false) {
+            return true; // Sucesso ao salvar os dados
+        } else {
+            return false; // Falha ao salvar os dados
+        }
+    }
 
-        $jsonUsers = json_encode($DataToJson);
-        file_put_contents("$Path/$cpf.json", $jsonUsers);
+    public function GetUserData()
+    {
         
     }
 
-    public function LoadRestaurant($name, $type, $address, $tel, $class)
+    public function GetRTName()
+    {
+        file_get_contents("core/db/Local/db_restaurants.json", $jsonRT);
+        $jsonRT = json_decode($DataRT, true);
+        $DataRT = new stdClass();
+        $name = $DataRT -> name;
+        return $name;
+    }
+
+    public function GetRTType()
     {
         file_get_contents("/core/db/Local/db_restaurants.json", $jsonRT);
         $jsonRT = json_decode($DataRT, true);
+        $DataRT = new stdClass();
+        $type = $DataRT -> type;
+        return $type;
+    }
 
-        if ($DataRT)
-        {
-            foreach($DataRT as $item)
-            {
-                
-            }
-        }
+    public function GetRTAdress()
+    {
+        file_get_contents("/core/db/Local/db_restaurants.json", $jsonRT);
+        $jsonRT = json_decode($DataRT, true);
+        $DataRT = new stdClass();
+        $address = $DataRT -> adress;
+        return $address;
+    }
+
+    public function GetRTTel()
+    {
+        file_get_contents("/core/db/Local/db_restaurants.json", $jsonRT);
+        $jsonRT = json_decode($DataRT, true);
+        $DataRT = new stdClass();
+        $tel = $DataRT -> tel;
+        return $tel;
+    }
+
+    public function GetRTStars()
+    {
+        file_get_contents("/core/db/Local/db_restaurants.json", $jsonRT);
+        $jsonRT = json_decode($DataRT, true);
+        $DataRT = new stdClass();
+        $stars = $DataRT -> stars;
+        return $stars;
     }
 }
 ?>
