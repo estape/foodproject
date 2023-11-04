@@ -62,6 +62,16 @@
   body{
     overflow-x: hidden;
   }
+  section h2{
+    font-size: 20px;
+  }
+  nav p{
+    font-size: 30px;
+    padding: 8px;
+  }
+  main .conteudo-principal{
+    width: 40vw;
+  }
   .nav-list{
     position: absolute;
     top: 8vh;
@@ -108,6 +118,18 @@
   .mobile-menu.active .line3 {
       transform: rotate(45deg) translate(-5px, -7px);
   }
+ 
+  @media screen and (max-width: 999px) {
+    nav p {
+      font-size: 30px;
+    }
+  
+    main .conteudo-principal {
+      width: 80vw;
+    }
+  
+  }
+  
   /*Fim Responsividade*/
   
   
@@ -119,15 +141,22 @@
     transition: all .2s;
     padding: 10px 20px;
     border-radius: 100px;
-    background: #cfef00;
+    background: white;
     border: 1px solid transparent;
     display: flex;
     align-items: center;
     font-size: 15px;
+    opacity: 80%;
   }
   
   button:hover {
-    background: #c4e201;
+    background: yellow;
+  }
+
+  .button2 > svg{
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
   }
   
   button > svg {
@@ -139,17 +168,38 @@
   button:hover svg {
     transform: translateX(5px);
   }
+
+  .button2:hover svg {
+    transform: translateX(5px);
+  }
+  .button2:active {
+    transform: scale(0.95);
+  }
   
   button:active {
     transform: scale(0.95);
   }
   
+  .button2{
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    border-style: hidden;
+    width: 25vw;
+    height: 5vh;
+    text-align: center;
+    border-radius: 100px;
+    opacity: 80%;
+  }
+  .button2:hover{
+    background-color: yellow;
+  }
   
   
   body{
     background-image: url(img/body.jpg);
     background-repeat: no-repeat;
-    background-size: 250vh;
+    background-size: 310vh;
     
   }
 
@@ -160,59 +210,64 @@
     background-size: cover;
     height: 40vh;
     
+    
   }
 
-  .fork{
+  nav p{
     font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     color: #FFDC2E;
     font-style: italic;
     font-weight: 600;
-    margin-left: 40%;
-    margin-right: 40%;
-    position: absolute;
-    top: 20%;
-    
+    text-align: center;
+    position: relative;
+    top: 40%;
     
   }
+
 
   .conteudo-principal {
       
     border: 1px solid black;
     display: flex;
-    justify-content: center;
     margin-top: 300px;
+    margin-bottom: 300px;
     height: 100vh;
-    width: 40vw;
     margin-left: 10%;
     border-radius: 40px;
-    background-color: #FFDC2E;
+    background-color: brown;
     justify-content: center; 
     align-items: center;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   main.conteudo-principal{
-    margin-bottom: 30px;
     width: 40vw;
     opacity: 85%;
+    position: relative;
+    left: 20%;
+
   }
 
-  form .container{
-    flex-direction: column;
-    
-  }
+ 
   
 
   h2 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 32px;
-    position: absolute;
+    font-size: 40px;
     top: 100vh;
     align-items: center;
     font-style: italic;
-    margin-left: 1%;
-
+    margin-left: 4%;
+    color: white;
+    text-shadow: 0 0 6px black;
+    text-align: center;
   }
+
+
+
   
   .search-container {
     display: flex;
@@ -228,7 +283,8 @@
 }
 
 #search {
-    margin-top: 200px;
+  position: absolute;
+  top: 40%;
     height: 50px;
     width: 45vh;  
     border-radius: 60px;
@@ -238,6 +294,7 @@
     color: black;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    
 }
 
   .box{
@@ -308,11 +365,7 @@
     background-color: #d62976;
     transition-duration: .3s;
   }
-  /* twitter*/
-  .containerTwo:hover {
-    background-color: #00acee;
-    transition-duration: .3s;
-  }
+  
   /* Whatsapp*/
   .containerFour:hover {
     background-color: #128C7E;
