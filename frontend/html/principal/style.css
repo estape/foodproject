@@ -239,9 +239,27 @@ color: white;
     border-radius: 40PX;
     display: none;
     transition: 500ms linear;
+    color: white;
   
     }
   
+    .popup .submit-btn{
+      color: #000;
+      width: 60%;
+      display: flex;
+      color:black;
+      padding:12px;
+      font-size: 17px;
+      background: white ;
+      color:black;
+      margin-top: 5px;
+      cursor: pointer;
+      border-radius: 50px;
+     justify-content: center;
+      text-align: center;
+    opacity: 0.8 ;
+    }
+
    
     *{
       font-family: 'Poppins', sans-serif;
