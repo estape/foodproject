@@ -433,10 +433,14 @@ color: white;
     font-family: 'Poppins', sans-serif;
     
 }
+.search {
+  height: 1px;
+}
 
   .box{
     border: 4px #DAA06D solid ;
   } 
+  
   
   /*footer*/
   
@@ -502,7 +506,6 @@ color: white;
     background-color: #d62976;
     transition-duration: .3s;
   }
-  
   /* Whatsapp*/
   .containerFour:hover {
     background-color: #128C7E;
@@ -549,108 +552,5 @@ color: white;
 .box{
     border: 4px #DAA06D solid ;
 } 
-
-/*footer*/
-
-footer{
-  background-image: linear-gradient(to bottom, #FFB442, #FFA726, #E6953C);
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-footer .container{
-  flex-direction: column;
-}
-
-footer .container p{
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-
-footer div{
-  font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  color: rgb(44, 44, 44);
-}
-
-footer p{
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  color: white;
-}
-
-
-
-/*Redes Sociais*/
-.card {
-  width: fit-content;
-  height: fit-content;
-  background-color: #E6953C;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-}
-
-/* Para todas redes sociais*/
-.socialContainer {
-  width: 52px;
-  height: 52px;
-  background-color: rgb(44, 44, 44);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition-duration: .3s;
-}
-/* instagram*/
-.containerOne:hover {
-  background-color: #d62976;
-  transition-duration: .3s;
-}
-
-/* Whatsapp*/
-.containerFour:hover {
-  background-color: #128C7E;
-  transition-duration: .3s;
-}
-/*Gmail*/
-.containerThree:hover {
-  background-color: #f14336;
-  transition-duration: .3s;
-}
-
-.socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: .3s;
-}
-
-.socialSvg {
-  width: 17px;
-}
-
-.socialSvg path {
-  fill: rgb(255, 255, 255);
-}
-
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+ 
 /*Fim redes sociais*/
-
-
