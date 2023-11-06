@@ -49,14 +49,16 @@
     </header>
 
     <nav class="pesquisa">
+      
 
         <div class="img-bg">
+
             <p>FORK'S POINT</p>
+            
             <div class="search-container">
-                <input id="search" placeholder="Escolha o restaurante" color="withe" list="restaurantes" name="cidades">
-
-
-            </div>
+              <input id="search" placeholder="restaurantes"  list="restaurantes" name="cidades">
+          </div>
+            
         </div>
 
         <datalist id="restaurantes">
@@ -122,32 +124,32 @@
                 
                             <div class="col">
                 
-                                <h3 class="title">billing address</h3>
+                                <h3 class="title">Endereço de Cobrança</h3>
                 
                                 <div class="inputBox">
-                                    <span>nome completo :</span>
-                                    <input type="text" placeholder="carlos souza">
+                                    <span>Nome Completo:</span>
+                                    <input type="text" placeholder="Carlos Souza">
                                 </div>
                                 <div class="inputBox">
-                                    <span>email :</span>
+                                    <span>Email:</span>
                                     <input type="email" placeholder="example@example.com">
                                 </div>
                                 <div class="inputBox">
-                                    <span>endereço :</span>
-                                    <input type="text" placeholder="rua - município - bairro">
+                                    <span>Endereço:</span>
+                                    <input type="text" placeholder="Rua - Município - Bairro">
                                 </div>
                                 <div class="inputBox">
-                                    <span>cidade :</span>
-                                    <input type="text" placeholder="mumbai">
+                                    <span>Cidade:</span>
+                                    <input type="text" placeholder="Exemplo: Mogi das Cruzes">
                                 </div>
                 
                                 <div class="flex">
                                     <div class="inputBox">
-                                        <span>estado:</span>
-                                        <input type="text" placeholder="india">
+                                        <span>Estado:</span>
+                                        <input type="text" placeholder="Exemplo: São Paulo">
                                     </div>
                                     <div class="inputBox">
-                                        <span>numero :</span>
+                                        <span>Número:</span>
                                         <input type="text" placeholder="123">
                                     </div>
                                 </div>
@@ -156,18 +158,18 @@
                 
                             <div class="col">
                 
-                                <h3 class="title">pay</h3>
+                                <h3 class="title">Pagamento</h3>
                 
                                 <div class="inputBox">
-                                    <span>cartões:</span>
+                                    <span>Cartões:</span>
                                     <img src="/frontend/html/principal/img/card_img.png" alt="">
                                 </div>
                                 <div class="inputBox">
-                                    <span>nome no cartão :</span>
-                                    <input type="text" placeholder="josé silva">
+                                    <span>Nome no Cartão:</span>
+                                    <input type="text" placeholder="Exemplo: José Silva Pinheiro">
                                 </div>
                                 <div class="inputBox">
-                                    <span>numero do cartão :</span>
+                                    <span>Número do Cartão:</span>
                                     <input type="number" placeholder="1111-2222-3333-4444">
                                 </div>
                                 <div class="inputBox">
@@ -192,7 +194,7 @@
                 
                                 <div class="flex">
                                     <div class="inputBox">
-                                        <span>ano :</span>
+                                        <span>Ano:</span>
                                         <input type="number" placeholder="2022">
                                     </div>
                                     <div class="inputBox">
@@ -206,7 +208,13 @@
                             </div>
                     
                         </div>
-                       <a href="javascript: fechar();" type="submit" class="submit-btn">finalizar </a>
+                       <a  href="javascript: abrir2();" type="submit" class="submit-btn">Finalizar </a>
+                       <a href="javascript: fechar();" type="submit" class="submit-btn">Sair</a>
+                       <div class="popup2" id="popup2">
+                        <img src="/frontend/html/principal/img/qrcode.png" alt="qrcode" class="qrcode">
+                        <a href="javascript: fechar2();" type="submit" class="submit-btn" id="fechar">Fechar</a>
+                        </div>
+                       
 
 
             </form>
@@ -285,7 +293,7 @@
       <div class="card">
         <a
           class="socialContainer containerOne"
-          href="https://www.instagram.com/fork_point/"
+          href="https://www.instagram.com/forks_point/"
           target="_blank"
         >
           <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
@@ -330,10 +338,20 @@
       function fechar () {
       document.getElementById('popup').style.display = 'none';
       }
+      function abrir2() {
+      document.getElementById('popup2').style.display = 'block';
+      document.getElementById('popup2').style.transition ='500ms linear'
+      }
+      function fechar2 () {
+      document.getElementById('popup2').style.display = 'none';
+      }
+      
       </script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
 
   </body>
 </html>

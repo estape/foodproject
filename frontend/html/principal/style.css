@@ -42,9 +42,6 @@
    margin-left: 32px;
   }
 
-  /*Responsividade*/
-
-
   .mobile-menu{
     cursor: pointer;
     display: none;
@@ -58,10 +55,24 @@
     transition: 0.3s;
   }
 
+  /*Responsividade*/
+
  @media screen and (max-width: 999px){
   body{
     overflow-x: hidden;
   }
+  main .popup{
+    width: 600px;
+    
+  }
+  main .popup2{
+    width: 185px;
+    height: 250px;
+  }
+  main .qrcode{
+    width: 150px;
+  }
+
   section h2{
     font-size: 20px;
   }
@@ -71,6 +82,9 @@
   }
   main .conteudo-principal{
     width: 40vw;
+  }
+  div #search{
+    width: 28vw;
   }
   .nav-list{
     position: absolute;
@@ -119,16 +133,6 @@
       transform: rotate(45deg) translate(-5px, -7px);
   }
  
-  @media screen and (max-width: 999px) {
-    nav p {
-      font-size: 30px;
-    }
-  
-    main .conteudo-principal {
-      width: 80vw;
-    }
-  
-  }
   
   /*Fim Responsividade*/
   
@@ -351,6 +355,26 @@ color: white;
      .submit-btn:hover{
       background: #2ecc71;
     }
+    .popup2{
+      position: fixed;
+      top: 0; bottom: 0;
+      left: 0; right:0;
+      margin: auto;
+      width: 17.5vw;
+      height: 30vh;
+      padding: 15px;
+      border: solid 1px #4c4d4f;
+      background: #D80C05;
+      border-radius: 40PX;
+      display: none;
+      transition: 500ms linear;
+      color: white;
+      }
+
+    .qrcode{
+      width: 200px;
+    }
+
 
   body{
     background-image: url(img/body.jpg);
@@ -428,7 +452,6 @@ color: white;
   .search-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .pesquisa img {
@@ -439,21 +462,17 @@ color: white;
 }
 
 #search {
-  position: absolute;
-  top: 40%;
+    position: absolute;
+    top: 40%;
     height: 50px;
-    width: 45vh;  
+    width: 30vw;  
     border-radius: 60px;
     text-align: center;
     border: 1px solid black;
     background-color: #FFDC2E;
     color: black;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    
-}
-.search {
-  height: 1px;
+    font-family: 'Poppins', sans-serif;    
 }
 
   .box{
@@ -565,9 +584,6 @@ color: white;
     }
   }
  
-.search {
-  height: 1px;
-}
 .box{
     border: 4px #DAA06D solid ;
 } 
