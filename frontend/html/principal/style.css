@@ -359,20 +359,23 @@ color: white;
       position: fixed;
       top: 0; bottom: 0;
       left: 0; right:0;
-      margin: auto;
+     margin: auto;
       width: 17.5vw;
       height: 30vh;
-      padding: 15px;
+      padding-left: 30px;
+      padding-top:30px ;
       border: solid 1px #4c4d4f;
       background: #D80C05;
       border-radius: 40PX;
       display: none;
       transition: 500ms linear;
       color: white;
+
       }
 
     .qrcode{
       width: 200px;
+
     }
 
 

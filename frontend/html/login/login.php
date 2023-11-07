@@ -8,26 +8,49 @@
     <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
+
+<?php function GetUserData($email, $password)
+{
+    $dbFilePath = "core/db/Users/";
+
+    if (file_exists("$dbFilePath/$email")) {
+        $JsonToData = json_decode(file_get_contents("$dbFilePath/$email"));
+
+        $userEmail = $JsonToData->email;
+        $UserPassword = $JsonToData->password;
+
+        // Verifique a senha usando password_verify
+        if ($email == $userEmail && password_verify($password, $UserPassword)) {
+            // Carregue os dados do arquivo JSON do usuário (exceto a senha por razões de segurança)
+            $userData = array($JsonToData->name, $JsonToData->cpf, $JsonToData->dataBirth, $JsonToData->card, $JsonToData->email);
+            return $userData;
+        }
+    } else {
+        return false;
+    }
+}
+?>
     <main id="container">
-        <form id="login_form">
+        <form method="post" id="login_form">
         <div id="form_header">
-            <h1>Login</h1>
             <div id="social_media">
-            <a href="#">
+            <h1>Login</h1>
+         
+            <a href="https://pt-br.facebook.com/">
                 <img src="/frontend/html/login/facebook.png" alt="">                
             </a>
 
             <a href="#">
-                <img src="/frontend/html/login/google.png" alt="Google logo">
+                <img src="/frontend/html/login/google.png"  alt="Google logo">
             </a>
              </div>
             <div id="inputs">
                 <div class="input_box">
-                    <label for="Nome">
+                    <label  for="Nome">
                     Nome
                     <div class="input_field">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" id="Nome" name="Nome">
+                    <input  type="text" id="Nome" name="Nome" required>
                     </div>
                 </label>
              </div>
@@ -37,7 +60,7 @@
                     E-mail
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                 </label>
             </div>
@@ -47,7 +70,7 @@
                     Senha
                     <div class="input-field">
                         <i class="fa-solid fa-key"></i>
-                        <input type="password" id="Password" name="Password">
+                        <input  type="password" id="Password" name="Password" required>
                     </div>
                 </label>
                 
@@ -60,9 +83,11 @@
             </div>
         </div>
 
-            <button type="submit" id="login_button">
+          
+                <a id="login_button" href="/frontend/html/principal/index.html">
                 Login
-            </button>
+                </a>
+           
     </form>
     </main>
 </body>
