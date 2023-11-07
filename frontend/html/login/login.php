@@ -50,7 +50,11 @@
                     <div class="input_field">
                     <i class="fa-solid fa-user"></i>
 <<<<<<< HEAD:frontend/html/login/login.php
+<<<<<<< HEAD:frontend/html/login/login.php
                     <input  type="text" id="Nome" name="Nome" required>
+=======
+                    <input type="text" id="Nome" name="Nome">
+>>>>>>> parent of 3c2d948 (login2):frontend/html/login/login.html
 =======
                     <input type="text" id="Nome" name="Nome">
 >>>>>>> parent of 3c2d948 (login2):frontend/html/login/login.html
