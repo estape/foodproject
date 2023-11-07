@@ -33,15 +33,14 @@
     <main id="container">
         <form method="post" id="login_form">
         <div id="form_header">
-            <div id="social_media">
             <h1>Login</h1>
-         
-            <a href="https://pt-br.facebook.com/">
+            <div id="social_media">
+            <a href="#">
                 <img src="/frontend/html/login/facebook.png" alt="">                
             </a>
 
             <a href="#">
-                <img src="/frontend/html/login/google.png"  alt="Google logo">
+                <img src="/frontend/html/login/google.png" alt="Google logo">
             </a>
              </div>
             <div id="inputs">
@@ -50,7 +49,11 @@
                     Nome
                     <div class="input_field">
                     <i class="fa-solid fa-user"></i>
+<<<<<<< HEAD:frontend/html/login/login.php
                     <input  type="text" id="Nome" name="Nome" required>
+=======
+                    <input type="text" id="Nome" name="Nome">
+>>>>>>> parent of 3c2d948 (login2):frontend/html/login/login.html
                     </div>
                 </label>
              </div>
@@ -60,7 +63,7 @@
                     E-mail
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email">
                     </div>
                 </label>
             </div>
@@ -70,7 +73,7 @@
                     Senha
                     <div class="input-field">
                         <i class="fa-solid fa-key"></i>
-                        <input  type="password" id="Password" name="Password" required>
+                        <input type="password" id="Password" name="Password">
                     </div>
                 </label>
                 
@@ -83,11 +86,9 @@
             </div>
         </div>
 
-          
-                <a id="login_button" href="/frontend/html/principal/index.html">
+            <button type="submit" id="login_button">
                 Login
-                </a>
-           
+            </button>
     </form>
     </main>
 </body>

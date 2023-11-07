@@ -62,7 +62,6 @@ border-radius: 5px;
 #social_media{
     display: flex;
     justify-content: space-around;
-    gap: 8px;
 }
 
 #social_media img {
@@ -124,10 +123,7 @@ border-radius: 5px;
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
-    text-decoration: none;
-    text-align: center;
 }
-
 
 #login_button:hover {
     transform: scale(1.05);
